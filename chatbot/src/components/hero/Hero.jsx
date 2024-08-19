@@ -16,8 +16,8 @@ const Hero = () => {
           <a href="#">Learn more</a>
         </div>
       </div>
-      <div className="w-1/3 h-full">
-        <img src="./vite.svg" alt="image" className="w-full h-full object-contain" />
+      <div className="h-full">
+        <img src="./images/african-american-mother-with-his-son 1.png" alt="image" className="w-full h-full object-fill" />
       </div>
     </main>
   );
