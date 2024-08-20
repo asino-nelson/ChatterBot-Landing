@@ -1,4 +1,3 @@
-
 import Hero from "../../components/hero/Hero";
 import Products from "../../components/products/Products";
 import News from "../../components/news/News";
@@ -16,7 +15,7 @@ const Landing = () => {
         <Products />
         <Traction />
         <News />
-        <JoinUs />
+        <JoinUs />       
       </div>
     </>
   );
