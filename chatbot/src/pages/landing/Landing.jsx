@@ -7,7 +7,7 @@ import Traction from "../../components/traction/Traction";
 
 const Landing = () => {
   return (
-    <div>
+    <div className="text-xl">
       <Hero />
       <ValueProp />
       <Products />
