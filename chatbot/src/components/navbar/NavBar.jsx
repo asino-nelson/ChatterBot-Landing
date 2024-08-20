@@ -5,8 +5,9 @@ import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import useMediaQuery from "../../hooks/UseMediaQuery";
+import { Link } from "react-router-dom";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const NavLink = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
@@ -29,27 +30,29 @@ const NavBar = ({ selectedPage, setSelectedPage }) => {
   return (
     <nav className="bg-white z-40 w-full fixed top-0 py-5 px-16 font-semibold">
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <img className="w-52" src="./images/logo.png" alt="logo" />
+        <Link to="/" >
+          <img className="w-52" src="./images/logo.png" alt="logo" />
+        </Link>
 
         {/**DESKTOP NAV */}
         {isAboveSmallScreen ? (
           <div className="flex justify-between gap-16 text-sm">
-            <Link
+            <NavLink
               page="ABOUT"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Link
+            <NavLink
               page="PRODUCTS"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Link
+            <NavLink
               page="BLOG"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Link
+            <NavLink
               page="GET STARTED"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
@@ -81,22 +84,22 @@ const NavBar = ({ selectedPage, setSelectedPage }) => {
               </motion.button>
             </div>
             <div className="flex flex-col gap-10 ml-[33%] text-xl">
-              <Link
+              <NavLink
                 page="ABOUT"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <Link
+              <NavLink
                 page="PRODUCTS"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <Link
+              <NavLink
                 page="BLOG"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <Link
+              <NavLink
                 page="GET STARTED"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
@@ -116,7 +119,7 @@ NavBar.propTypes = {
   setSelectedPage: PropTypes.bool.isRequired,
 };
 
-Link.propTypes = {
+NavLink.propTypes = {
   page: PropTypes.string.isRequired,
   selectedPage: PropTypes.bool.isRequired,
   setSelectedPage: PropTypes.bool.isRequired,
