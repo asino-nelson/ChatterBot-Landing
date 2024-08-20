@@ -1,4 +1,5 @@
 import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import FooterLink from "./FooterLink";
 // import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -20,9 +21,10 @@ const Footer = () => {
           <div className="flex flex-col">
             <p className="font-semibold mb-2">Quick Links</p>
             <div className="flex flex-col gap-y-3">
-              <a href="#">About us</a>
-              <a href="#">Products</a>
-              <a href="#">Latest News</a>
+              <FooterLink page="about" label="About us"/>
+              <FooterLink page="products" label="Products"/>
+              <FooterLink page="blog" label="Latest News"/>
+             
             </div>
           </div>
 
@@ -43,9 +45,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div
-        className="border-t border-[#1C1E21] pt-10 flex flex-col lg:flex-row lg:items-center justify-between space-y-6 lg:space-y-0 text-sm lg:text-base font-normal"
-      >
+      <div className="border-t border-[#1C1E21] pt-10 flex flex-col lg:flex-row lg:items-center justify-between space-y-6 lg:space-y-0 text-sm lg:text-base font-normal">
         <div className="text-[#232323] text-sm mt-4">©2024 Meta</div>
         <div className="w-full lg:w-1/4 grid grid-cols-2 gap-4 lg:gap-0 lg:flex lg:flex-row flex-row-reverse justify-between mt-4">
           <a href="#">Terms and Conditions</a>
