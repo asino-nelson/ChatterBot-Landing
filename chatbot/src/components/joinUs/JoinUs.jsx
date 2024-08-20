@@ -1,6 +1,6 @@
 const JoinUs = () => {
   return (
-    <div className="w-full h-[320px] flex bg-[#EDE7EF]">
+    <div id="get started" className="w-full h-[320px] flex bg-[#EDE7EF]">
       <img src="./images/join.png" className="w-1/2 h-full" alt="image" />
       <div className="h-full py-8 px-10">
         <div className="py-10 px-4 text-[#A03516]">
