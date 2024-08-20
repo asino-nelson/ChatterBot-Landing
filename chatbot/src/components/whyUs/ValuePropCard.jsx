@@ -28,7 +28,7 @@ const ValuePropCard = () => {
           className="bg-white flex flex-col justify-center  h-[273px] rounded-md p-7 gap-3"
         >
           <img src={data.icon} className="w-12 h-12" alt="icon" />
-          <h3 className="text-2xl">{data.title}</h3>
+          <h3 className="text-2xl font-semibold">{data.title}</h3>
           <p className="pr-4">{data.description}</p>
         </div>
       ))}
