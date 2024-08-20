@@ -1,12 +1,7 @@
-import { useState } from "react";
-import NavBar from "../../components/navbar/NavBar";
-
 
 const Hero = () => {
-  const [selectedPage, setSelectedPage] = useState("home");
   return (
     <main className="w-full h-screen flex flex-row top-0 items-center justify-items-center">
-      <NavBar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className="bg-[#6016A2] text-white py-20 px-[70px] gap-[10px] w-1/2 h-full">
         <div className="w-full h-full gap-5 flex flex-col justify-center ">
           <h2 className="font-bold text-7xl">
